@@ -4,7 +4,7 @@ const PruebaCtrl = require('../controllers/prueba.controller')
 
 route.get('/', PruebaCtrl.obtener)
 
-route.post('/crear', PruebaCtrl.crear)
+route.post('/', PruebaCtrl.crear)
 
 route.put('/', PruebaCtrl.actualizar)
 
