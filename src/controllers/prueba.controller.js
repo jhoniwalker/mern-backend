@@ -15,7 +15,7 @@ PruebaCtrl.crear=async(req,res) => {
     })
 
     await NuevoRegistro.save()
-    res.json({mensaje:'Empleado guardado'})
+    res.json({mensaje:'Empleado creado'})
 }
 
 PruebaCtrl.actualizar=(req,res) => {
