@@ -8,8 +8,10 @@ require('./database')
 app.set('Port', 4000)
 app.use(morgan('dev'))
 app.use(cors())
-//app.use(bodyparser.urlencoded({extended:true}))
-//app.use(bodyparser.json())
+
+//body-parser
+app.use(bodyparser.urlencoded({extended:true}))
+app.use(bodyparser.json())
 
 //routes
 app.use('/api/',require('./routes/prueba.route'))

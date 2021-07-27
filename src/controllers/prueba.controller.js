@@ -1,4 +1,4 @@
-require('../models/prueba.model')
+const Empleado = require('../models/prueba.model')
 
 const PruebaCtrl={}
 
@@ -8,9 +8,9 @@ PruebaCtrl.obtener=(req,res) => {
 }
 
 PruebaCtrl.crear=async(req,res) => {
-    console.log(req.body)
+    //console.log(req.body)
     const {nombre, apellido, salario}=req.body
-    const NuevoRegistro= new Empleado({
+    const NuevoRegistro = new Empleado({
         nombre, apellido, salario
     })
 

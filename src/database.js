@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-URI=('mongodb://localhost/mern-prueba')
+URI=('mongodb://localhost/merndb')
 
 mongoose.connect(URI, {
     useNewUrlParser:true,
