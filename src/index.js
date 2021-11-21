@@ -14,7 +14,7 @@ app.use(bodyparser.urlencoded({extended:true}))
 app.use(bodyparser.json())
 
 //routes
-app.use('/api/',require('./routes/prueba.route'))
+app.use('/api/',require('./routes/empleado.route'))
 
 //start server
 app.listen(app.get('Port'), () => {
